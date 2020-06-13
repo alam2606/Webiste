@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href= "Mywebsite.css">	<!-- we link the css file here-->
-<script src="website.js"></script> <!-- we link the script file here-->
+ <!-- we link the script file here-->
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,42 +10,40 @@
 	<h1>K.G.N Filter Products</h1>
 	<p><b>Mumbai, Maharastra &emsp; GST:27AXSPM3716E1Z9</b></p>
 	<div class="tab">   <!-- Div tag is used for define the division or section in html documents-->
-    	<button class="tablinks" onclick="openPage(event, 'Home')">Home</button>	<!-- here we add button in page-->
-    	<button class="tablinks" onclick="openPage(event,'Our Products')">Our Products</button>
+    	<button class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</button>	<!-- here we add button in page-->
+    	<button class="tablinks" onclick="openPage(event,'Our Products')">Our Products</button>  <!-- default id is used for it showing home content bydefault-->
     	<button class="tablinks" onclick="openPage(event,'Profile')">Profile</button>
     	<button class="tablinks" onclick="openPage(event,'Contacts')">Contacts</button>	
-    </div>
-<div id ="Home" class="tabcontent">
-	<h1 style="text-align: center">Air Filter</h1>
-	<div class=swipe>
-		<img  height="250" src="D:\\Html\\MYwebsite\\Filter.jpeg"><!--height is used for Equal height before the image -->
-		<img  height="250" src="D:\\Html\MYwebsite\\Combination micrv Filter.jpeg" >
+  </div>
 
-		<img height="250" src="D:\\Html\MYwebsite\\microveefilter.jpeg" >
-		<img height="250" src="D:\Html\MYwebsite\\Net Filter.jpeg" >
-		<img height="250" src="D:\Html\MYwebsite\\Carbon Filter.jpeg">
-		<img height="250" src="D:\Html\MYwebsite\\Ducting Filter.jpeg" >
-		<img height="250" src="D:\Html\MYwebsite\\Kitchenhood Filter.jpeg">
-		<img height="250" src="D:\Html\MYwebsite\\FlangeFilter.jpeg">
-		
+<div id ="Home" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+	<h1 style="text-align: center">Air Filter</h1>
+	<div class="swipe">
+		<img  height="250" src="Filter.jpeg"><!--height is used for Equal height before the image -->
+		<img  height="250" src="Combination micrv Filter.jpeg" >
+
+		<img height="250" src="microveefilter.jpeg" >
+		<img height="250" src="Net Filter.jpeg" >
+		<img height="250" src="Carbon Filter.jpeg">
+		<img height="250" src="Ducting Filter.jpeg" >
+		<img height="250" src="Kitchenhood Filter.jpeg">
+		<img height="250" src="FlangeFilter.jpeg">	
 	</div>
-<div>
-  <h3 style="text-align: center;font-size: 24px">Profile</h3>
-  <p>Established in the year 2007, we, <b>“K.G.N Filter Products",</b>
-  are manufacturing, supplying, repairing & installing all types of Air-Handling-Units Filters and ductable filters.Our products are well known among clients owing to their tough construction, best quality and timely supply. We supply our products in various areas such as Hospital, Mall,Hotels & in differents industrial areas.</p>
 </div>
-</div>
+    
 <div id="Our Products" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
 	<h3 style="text-align: center;font-size: 24px">Our Products</h3>
 	<p>We have established ourselves as a renowned manufacturer, suppliers, installing of <b>pre filter & microvee filer for dust collection</b>. Made using optimum quality raw material, all products are highly demanded by the clients for their features such as perfect designing and finishing . Details of the products are listed below.
 	</p>
 
-  <h3 style="border:1px solid #ccc;width:1330px;height:560px">Air Filter
+  <h3 style="border:1px solid #ccc;width:1330px;height:570px">Air Filter
   <p style="color:black; font-size:14px">We are offering our clients Air Filters.</p>
 
   <div class="row">
   <div class="column">
-    <img src="D:\Html\MYwebsite\\Filter.jpeg" alt="Pre Filter"  
+    <img src="Filter.jpeg" alt="Pre Filter"  
     style="width:80%;height:70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
     <span style="color:blue"><br>Air Filter/Pre Filter 
     </span>
@@ -56,8 +54,9 @@
       <li><b>Shape:</b> Square</li>
     </ul>
   </div>
+
   <div class="column">
-    <img src="D:\Html\MYwebsite\\microveefilter.jpeg"  alt="Pre Filter"  style="width:80%;height: 70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
+    <img src="microveefilter.jpeg"  alt="Pre Filter"  style="width:80%;height: 70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
       <span style="color:blue"><br>Non woven Microvee Filter
       </span>
       <ul style="font-size: 14px">    
@@ -68,8 +67,9 @@
           <li><b>Shape:</b> Square</li>
       </ul>
   </div>
+
   <div class="column">
-    <img src="D:\Html\MYwebsite\\Combination micrv Filter.jpeg" alt="Pre Filter"  style="width:80%; height: 70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
+    <img src="Combination micrv Filter.jpeg" alt="Pre Filter"  style="width:80%; height: 70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
      <span style="color:blue"><br>Combination Microvee Filter
      </span>
         <ul style="font-size: 14px">    
@@ -79,8 +79,9 @@
           <li><b>Shape:</b> Square</li>
         </ul>
   </div>
+
   <div class="column">
-    <img src="D:\Html\MYwebsite\\Net Filter.jpeg" alt="Pre Filter"  style="width:80%; height: 70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
+    <img src="Net Filter.jpeg" alt="Pre Filter"  style="width:80%; height: 70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
      <span style="color:blue"><br>Metal Mesh Filter
      </span>
         <ul style="font-size: 14px">    
@@ -91,22 +92,47 @@
           <li><b>Type:</b>Woven</li>
         </ul>
   </div>
-
-
 </div>
 </h3>
 </div>
 
 <div id="Profile" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3 style="text-align: center;font-size:24px">Profile</h3>
   <p>Established in the year 2007, we, <b>“K.G.N Filter Products",</b>
   are manufacturing, supplying, repairing & installing all types of Air-Handling-Units Filters and ductable filters.Our products are well known among clients owing to their tough construction, best quality and timely supply. We supply our products in various areas such as Hospital, Mall,Hotels & in differents industrial areas.</p>
 </div>
 
 <div id="Contacts" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  
   <h3><b>Reach Us</b></h3>
   <p>Ashok Nagar Group No-1 Near Ruby Hospital, Sona Intp Colony <br>Tagore Nagar Vikhroli East,<br>Mumbai-400078, Maharastra, India<br >Mohammad Zamiruddin<br>Call<b> 09833192321</b></p>
+  <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8127291074093!2d72.92963631421334!3d19.11586975568713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c73547f849e1%3A0x68e180db27bfe76!2sKgn%20Filter%20Products!5e0!3m2!1sen!2sin!4v1591766981820!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+
+    <div id="left"></div>
+  <form action="#">
+    <label for="Requirement Details">
+      <h3 id="htmltag">Requirement Details</h3>
+      <textarea id="contactus" placeholder="To Get Best Quotes Describe Your Requirements:
+-What Are You Looking For 
+-Features/Specifications
+-Minimum Order Quantity"></textarea>
+    </label>
+
+  <div >
+    <br>  <!-- for adding one line space-->
+    <input type="number" placeholder="+91 Enter Number" id="message"/>
+  </div>
+
+  <div >
+    <br>  <!-- for adding one line space-->
+    <input type="message" placeholder="Enter your name" id="contact"/>
+  </div>
+  </form>
 </div>
 
+</div>  
 </body>
+<script src="website.js"></script>
 </html>

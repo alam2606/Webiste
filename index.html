@@ -3,7 +3,11 @@
 <link rel="stylesheet" href= "Mywebsite.css">	<!-- we link the css file here-->
  <!-- we link the script file here-->
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  <!--css Liabraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <!-- javascript Liabraries -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--javascript Liabraries -->
 
 </head>
 <body>
@@ -17,122 +21,166 @@
   </div>
 
 <div id ="Home" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-	<h1 style="text-align: center">Air Filter</h1>
+  <h1 style="text-align: center">Air Filter</h1>
 	<div class="swipe">
-		<img  height="250" src="Filter.jpeg"><!--height is used for Equal height before the image -->
+		<img  height="250" src="Filter.jpeg"><!--Height of image is equal-->
 		<img  height="250" src="Combination micrv Filter.jpeg" >
-
 		<img height="250" src="microveefilter.jpeg" >
 		<img height="250" src="Net Filter.jpeg" >
 		<img height="250" src="Carbon Filter.jpeg">
 		<img height="250" src="Ducting Filter.jpeg" >
 		<img height="250" src="Kitchenhood Filter.jpeg">
 		<img height="250" src="FlangeFilter.jpeg">	
+		
 	</div>
 </div>
     
 <div id="Our Products" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-	<h3 style="text-align: center;font-size: 24px">Our Products</h3>
-	<p>We have established ourselves as a renowned manufacturer, suppliers, installing of <b>pre filter & microvee filer for dust collection</b>. Made using optimum quality raw material, all products are highly demanded by the clients for their features such as perfect designing and finishing . Details of the products are listed below.
+  <h3 style="text-align: center;font-size: 24px">Our Products</h3>
+	<p style="font-size: 18px">We have established ourselves as a renowned manufacturer, suppliers, installing of <b>pre filter & microvee filer for dust collection</b>. Made using optimum quality raw material, all products are highly demanded by the clients for their features such as perfect designing and finishing . Details of the products are listed below.
 	</p>
 
-  <h3 style="border:1px solid #ccc;width:1330px;height:570px">Air Filter
-  <p style="color:black; font-size:14px">We are offering our clients Air Filters.</p>
+  <p style="color:black; font-size:20px"><b>We are offering our clients Air Filters.</b></p>
+  <div class="container"> <!--In html container is a area it is  enclosed by begining and closing tag for exampole html tag enclsed entired htmk documents and some other tags enclosed single word and paragraph  -->
+  <h3 style="color: darkblue"><b>Air Filter</b></h3>   
+  
+  <div class="row" style="border:1px solid lightgrey;width:1000;height: 1000;padding: 20px; border-spacing: 20px">    <!--First row Here we added border-->
+    <div class="col-sm-4">  <!-- First column in row-->
+      <img src="Filter.jpeg" alt="Pre Filter"  style="width:90%;height:70%;border:1px solid grey;width:700;height:700; padding: 25px; background-color:#FAFAD2 ;border-radius: 50%">
+    </div>
 
-  <div class="row">
-  <div class="column">
-    <img src="Filter.jpeg" alt="Pre Filter"  
-    style="width:80%;height:70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
-    <span style="color:blue"><br>Air Filter/Pre Filter 
-    </span>
-    <ul style="font-size: 14px">    <!-- This tag is used for unordering the list with bullets ,small black and circles-->
-      <li><b>Type:</b>  Box/Falnge</li>
-      <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
-      <li><b>Sizes:</b> 610mmx610mmx50mm/ Customized</li>
-      <li><b>Shape:</b> Square</li>
-    </ul>
+    <div class="col-sm-4" >  <!--Second column in row -->
+      <h3><b>Air Filter/Pre Filter</b></h3>
+      <ul style="font-size: 15px">    <!-- This tag is used for unorder list with bullets ,small black and circles-->
+        <li><b>Type:</b>  Box/Falnge</li>
+        <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
+        <li><b>Sizes:</b> 610mmx610mmx50mm/ Customized</li>
+        <li><b>Shape:</b> Square</li>
+      </ul> 
+    </div>
   </div>
 
-  <div class="column">
-    <img src="microveefilter.jpeg"  alt="Pre Filter"  style="width:80%;height: 70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
-      <span style="color:blue"><br>Non woven Microvee Filter
-      </span>
-      <ul style="font-size: 14px">    
+  <br>  <!--Here i have added one line space after the boder -->
+  <h3 style="color: darkblue"><b>Microvee Combination Filter</b></h3>
+  <div class="row"  style="border:1px solid lightgrey;width:1000;height: 1000;padding: 20px;border-spacing: 20px"> <!-- second row-->
+
+    <!--using Border-spacing we can add space in border-->
+    <div class="col-sm-4">
+      <img src="Combination micrv Filter.jpeg" alt=" Microvee Combination Filter" style="width:90%;height:70%;border:1px solid grey;width:700;height:700; padding: 25px;background-color:#FAFAD2; border-radius:50%">
+    </div>
+    <div class="col-sm-4"> 
+      <h3><b>Microvee  Combination Filter</b></h3>
+      <ul style="font-size: 15px">    
           <li><b>Type:</b>  Box/Falnge</li>
           <li><b>Microvee Filter:</b>  5/3 micron</li>
           <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
           <li><b>Sizes:</b> 610mmx610mmx305mm/ Customized</li>
           <li><b>Shape:</b> Square</li>
       </ul>
+    </div>
   </div>
 
-  <div class="column">
-    <img src="Combination micrv Filter.jpeg" alt="Pre Filter"  style="width:80%; height: 70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
-     <span style="color:blue"><br>Combination Microvee Filter
-     </span>
-        <ul style="font-size: 14px">    
-          <li><b>Type:</b>  Box/Falnge</li>
-          <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
-          <li><b>Sizes:</b> Standard/ Customized</li>
-          <li><b>Shape:</b> Square</li>
-        </ul>
-  </div>
+  <br>
+  <h3 style="color: darkblue"><b>Mesh Filter</b></h3>
+  
 
-  <div class="column">
-    <img src="Net Filter.jpeg" alt="Pre Filter"  style="width:80%; height: 70%;border:2px solid lightgray;width:700;height:700; padding: 10px">
-     <span style="color:blue"><br>Metal Mesh Filter
-     </span>
-        <ul style="font-size: 14px">    
-          <li><b>Material:</b>  SS</li>
+  <div class="row"  style="border:1px solid lightgrey;width:1000;height: 1000;padding: 20px;border-spacing: 20px"> <!-- second row-->
+    <div class="col-sm-4">
+      <img src= "Net Filter.jpeg" alt="Mesh Filter"  style="width:90%;height:70%;border:1px solid grey;width:700;height:700; padding: 25px;background-color:#FAFAD2; border-radius:100%">
+    </div>
+    <div class="col-sm-4"> 
+      <h3><b>Mesh Filter</b></h3>
+      <ul style="font-size: 15px">    
+          <li><b>Material:</b>  SS/Aluminium/G.I</li>
           <li><b>Hole Shape:</b> Square</li>
           <li><b>Layers:</b> 1 to 5 layers</li>
           <li><b>Size:</b>Standard/Customized </li>
           <li><b>Type:</b>Woven</li>
-        </ul>
+      </ul>
+    </div>
   </div>
+
+  <br>
+  <h3 style="color: darkblue"><b>Microvee Filter</b></h3>
+    
+  <div class="row"  style="border:1px solid lightgrey;width:1000;height: 1000;padding: 20px;border-spacing: 20px"> <!-- second row-->
+    <div class="col-sm-4">
+      <img src= "microveefilter.jpeg" alt="Mesh Filter"  style="width:90%;height:70%;border:1px solid grey;width:700;height:700; padding: 25px;background-color:#FAFAD2; border-radius:100%">
+    </div>
+    <div class="col-sm-4"> 
+      <h3><b>Microvee Filter</b></h3>
+      <ul style="font-size: 15px">    
+          <li><b>Type:</b>  Box/Falnge</li>
+          <li><b>Microvee Filter:</b>  5/3 micron</li>
+          <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
+          <li><b>Sizes:</b> 610mmx610mmx305mm/ Customized</li>
+          <li><b>Shape:</b> Square</li>
+      </ul>
+    </div>
+  </div>
+   
 </div>
-</h3>
 </div>
 
 <div id="Profile" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3 style="text-align: center;font-size:24px">Profile</h3>
-  <p>Established in the year 2007, we, <b>“K.G.N Filter Products",</b>
+  <p style="font-size: 18px">Established in the year 2007, we, <b>“K.G.N Filter Products",</b>
   are manufacturing, supplying, repairing & installing all types of Air-Handling-Units Filters and ductable filters.Our products are well known among clients owing to their tough construction, best quality and timely supply. We supply our products in various areas such as Hospital, Mall,Hotels & in differents industrial areas.</p>
 </div>
 
 <div id="Contacts" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  
-  <h3><b>Reach Us</b></h3>
-  <p>Ashok Nagar Group No-1 Near Ruby Hospital, Sona Intp Colony <br>Tagore Nagar Vikhroli East,<br>Mumbai-400078, Maharastra, India<br >Mohammad Zamiruddin<br>Call<b> 09833192321</b></p>
-  <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8127291074093!2d72.92963631421334!3d19.11586975568713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c73547f849e1%3A0x68e180db27bfe76!2sKgn%20Filter%20Products!5e0!3m2!1sen!2sin!4v1591766981820!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
 
-    <div id="left"></div>
-  <form action="#">
-    <label for="Requirement Details">
-      <h3 id="htmltag">Requirement Details</h3>
-      <textarea id="contactus" placeholder="To Get Best Quotes Describe Your Requirements:
+  <div class="container"> <!--In html container is a area it is  enclosed by begining and closing tag for exampole html tag enclsed entired htmk documents and some other tags enclosed single word and paragraph  -->
+      <div class="row">
+        <div class="col-sm-4">  <!-- First column in row-->
+          <h3 style="color: darkblue"><b>Reach US</b></h3>   
+          <p style="font-size: 17px">Ashok Nagar Group No-1 Near Ruby Hospital,<br> Sona Intp Colony Tagore Nagar Vikhroli East,<br>Mumbai-400078, Maharastra, India<br >Mohammad Zamiruddin<br>Call<b> 09833192321</b></p>
+        </div>
+
+        <div class="col-sm-2">
+          <h3>Requirements details</h3> 
+          <form action="#">
+            <label for="Requirement Details">
+              <textarea class="form-control" placeholder="To Get Best Quotes Describe Your Requirements:-
 -What Are You Looking For 
 -Features/Specifications
--Minimum Order Quantity"></textarea>
-    </label>
+-Order Quantity" style="width: 600px;height: 120px;background-color: #FAFAD2"></textarea>
+            </label>
 
-  <div >
-    <br>  <!-- for adding one line space-->
-    <input type="number" placeholder="+91 Enter Number" id="message"/>
-  </div>
+            <div >
+            <br>  <!-- for adding one line space-->
+            <input type="number" placeholder="+91 Enter Number" class="form-control" style="width: 600px;background-color: #FAFAD2" />
+            </div>
 
-  <div >
-    <br>  <!-- for adding one line space-->
-    <input type="message" placeholder="Enter your name" id="contact"/>
-  </div>
-  </form>
+            <div>
+            <br>  <!-- for adding one line space-->
+            <input type="message" placeholder="Enter your name" class="form-control" style="width: 600px;
+            background-color:#FAFAD2" />
+            </div>
+
+            <div>
+            <br>
+            <input type="submit" value="Submit" class="form-control" id="submitbutton" style="width: 100px; background-color:#FAFAD2;position: absolute; left:  250px;"/>  <!-- id for performing operation in javaScript-->
+            </div>
+            <br>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <br><p style="font-size: 18px;color: grey"><b>Get direction</b></p>
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8127291074093!2d72.92963631421334!3d19.11586975568713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c73547f849e1%3A0x68e180db27bfe76!2sKgn%20Filter%20Products!5e0!3m2!1sen!2sin!4v1591766981820!5m2!1s en!2sin" width="620" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>  <!--Here we  added google map -->
+        </div>
+        
+      </div>
+    </div>
+    
+  
 </div>
-
-</div>  
+    
 </body>
-<script src="website.js"></script>
+<script src="website.js"></script>    <!--We link the javascript file here-->
+</html>
 </html>

@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
+
 body, html 
   {
     font-family: Arial;
@@ -15,13 +12,13 @@ body, html
     overflow: hidden;
     border: 1px solid #ccc;
     margin:auto;
-    background-color: lightgray;
+    background-color: #1E90FF;
     
   }
 
 .tab button
 {
-  background-color: lightgray;
+  background-color: #1E90FF;
   float: left;
   border: none;
   outline: none;
@@ -29,53 +26,30 @@ body, html
   padding: 8px 14px; /* distance of button  for ex from one button to another button*/ 
   transition: 0.6s;
   font-size: 16px;
+  color: white;
 
 }
-.tab button:hover
-{
-  background-color: blue;
+.tab button:hover {
+  background-color: lightgrey;
 
 }
-.tab button.active
-{
-  background-color:none;
+.tab button.active {
+  background-color:blue;
 
 }
-.tabcontent
+.tabcontent    /*tabcontent is for when we click on button then what we write in tab it will show.*/
 {   
-  
-  background-color:white;
-  font-color:"white";
 
+  padding: 6px 12px;
+  border: none;
+  border-top: none;
 }
-.swipe
-    {
+
+.swipe  /* Swipe class used for moving the images*/
+    {   
       overflow: auto;
       white-space: nowrap;
       padding-top: 2px;
     }
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 1px;
-}
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 30.33%;
-  padding: 10px;
-}
-
-</style>
-</head>
-</html>
 

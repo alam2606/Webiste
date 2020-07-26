@@ -1,186 +1,290 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" href= "Mywebsite.css">	<!-- we link the css file here-->
- <!-- we link the script file here-->
+<html lang="en">
+
 <head>
- <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  <!--css Liabraries -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <!-- javascript Liabraries -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--javascript Liabraries -->
+  <!--carsouel plugin is a component for cycling the elements like a slideshow -->
+  <title>KGN_Filter_Products</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
+<style>
+  .center { /* For align the image at the center */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+}
+.carousel-control.right, .carousel-control.left {/* Style the left and prevoius buttons*/
+  background-image: none;
+  color: #f4511e;
+}
+
+.jumbotron 
+  {
+      background-color: #f4511e;
+      color: #fff;
+      
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a { /* Set The Hover for navigation bar*/
+  color: #f4511e !important;
+  background-color: #fff !important;
+}
+
+
+
+</style>
 <body>
-	<h1>K.G.N Filter Products</h1>
-	<p><b>Mumbai, Maharastra &emsp; GST:27AXSPM3716E1Z9</b></p>
-	<div class="tab">   <!-- Div tag is used for define the division or section in html documents-->
-    	<button class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</button>	<!-- here we add button in page-->
-    	<button class="tablinks" onclick="openPage(event,'Our Products')">Our Products</button>  <!-- default id is used for it showing home content bydefault-->
-    	<button class="tablinks" onclick="openPage(event,'Profile')">Profile</button>
-    	<button class="tablinks" onclick="openPage(event,'Contacts')">Contacts</button>	
-  </div>
+  <nav class="navbar-inverse">  <!--this class is used for black navigation bar -->
+      <div class="container">   <!--It specified the arae on page  -->
+        <div class="navbar-header"> <!--This class add the navigation bar in header format -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu"><!--Collapse class is used when we want to hide and show large amount of contents on webpage -->
+            <span class="icon-bar"></span>  
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color: white; font-family:arial" >
+          kgn fiter products</a><!--Set the logo on left on side-->
+        </div>
 
-<div id ="Home" class="tabcontent">
-  <h1 style="text-align: center">Air Filter</h1>
-	<div class="swipe">
-		<img  height="250" src="Filter.jpeg"><!--Height of image is equal-->
-		<img  height="250" src="Combination micrv Filter.jpeg" >
-		<img height="250" src="microveefilter.jpeg" >
-		<img height="250" src="Net Filter.jpeg" >
-		<img height="250" src="Carbon Filter.jpeg">
-		<img height="250" src="Ducting Filter.jpeg" >
-		<img height="250" src="Kitchenhood Filter.jpeg">
-		<img height="250" src="FlangeFilter.jpeg">	
-		
-	</div>
-</div>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">   <!-- Navigation appear in left side-->
+            <li class="active"><a href="#home">HOME</a></li>  
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- A Jumbotron class  indicates big box with rounded corners for extra attention to special  containts and information
+    bydefauk jumbotron color is grey with rounded corner,we cal enlarge,font size of the text inside it. 
+    we used jumbotron class with <div> tag-->
+    <div class="jumbotron text-center">
+        <h1>K.G.N Filter Products</h1>
+        <p style="color:blue;font-size: 30px">Manufacturer Of Air Filter</p>
+        <p>Manufacturers Suppliers & Repairing All Types Of AHU Filters,<br>
+        HVAC Filters,Ducting Filter & Ind Filters.</p>
+      </div>
     
-<div id="Our Products" class="tabcontent">
-  <h3 style="text-align: center;font-size: 24px">Our Products</h3>
-	<p style="font-size: 18px">We have established ourselves as a renowned manufacturer, suppliers, installing of <b>pre filter & microvee filer for dust collection</b>. Made using optimum quality raw material, all products are highly demanded by the clients for their features such as perfect designing and finishing . Details of the products are listed below.
-	</p>
 
-  <p style="color:black; font-size:20px"><b>We are offering our clients Air Filters.</b></p>
-  <div class="container"> <!--In html container is a area it is  enclosed by begining and closing tag for exampole html tag enclsed entired htmk documents and some other tags enclosed single word and paragraph  -->
-  <h3 style="color: darkblue"><b>Air Filter</b></h3>   
-  
-  <div class="row" style="border:1px solid lightgrey;width:1000;height: 1000;padding: 20px; border-spacing: 20px">    <!--First row Here we added border-->
-    <div class="col-sm-4">  <!-- First column in row-->
-      <img src="Filter.jpeg" alt="Pre Filter"  style="width:90%;height:70%;border:1px solid grey;width:700;height:700; padding: 25px; background-color:#FAFAD2 ;border-radius: 50%">
-    </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-    <div class="col-sm-4" >  <!--Second column in row -->
-      <h3><b>Air Filter/Pre Filter</b></h3>
-      <ul style="font-size: 15px">    <!-- This tag is used for unorder list with bullets ,small black and circles-->
-        <li><b>Type:</b>  Box/Falnge</li>
-        <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
-        <li><b>Sizes:</b> 610mmx610mmx50mm/ Customized</li>
-        <li><b>Shape:</b> Square</li>
-      </ul> 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img  height="440"src="D:\Html\MYwebsite\Filter Images\Kgn filter images\Filter.jpeg" alt="Pre Filter" class="center" style="width:27%">
+  </div>
+
+    <div class="item">
+      <img height="440" src="D:\Html\MYwebsite\Filter Images\Kgn filter images\Combination micrv Filter.jpeg" alt="Microvee Filter" class="center" style="width:27% ">
+      </div>
+
+    <div class="item">
+      <img height="480" src="D:\Html\MYwebsite\Filter Images\Wiremesh_Filter1.jpeg" alt="Wiremesh Filter" class="center" style="width:30% ">
+          
     </div>
   </div>
 
-  <br>  <!--Here i have added one line space after the boder -->
-  <h3 style="color: darkblue"><b>Microvee Combination Filter</b></h3>
-  <div class="row"  style="border:1px solid lightgrey;width:1000;height: 1000;padding: 20px;border-spacing: 20px"> <!-- second row-->
-
-    <!--using Border-spacing we can add space in border-->
-    <div class="col-sm-4">
-      <img src="Combination micrv Filter.jpeg" alt=" Microvee Combination Filter" style="width:90%;height:70%;border:1px solid grey;width:700;height:700; padding: 25px;background-color:#FAFAD2; border-radius:50%">
-    </div>
-    <div class="col-sm-4"> 
-      <h3><b>Microvee  Combination Filter</b></h3>
-      <ul style="font-size: 15px">    
-          <li><b>Type:</b>  Box/Falnge</li>
-          <li><b>Microvee Filter:</b>  5/3 micron</li>
-          <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
-          <li><b>Sizes:</b> 610mmx610mmx305mm/ Customized</li>
-          <li><b>Shape:</b> Square</li>
-      </ul>
-    </div>
-  </div>
-
-  <br>
-  <h3 style="color: darkblue"><b>Mesh Filter</b></h3>
-  
-
-  <div class="row"  style="border:1px solid lightgrey;width:1000;height: 1000;padding: 20px;border-spacing: 20px"> <!-- second row-->
-    <div class="col-sm-4">
-      <img src= "Net Filter.jpeg" alt="Mesh Filter"  style="width:90%;height:70%;border:1px solid grey;width:700;height:700; padding: 25px;background-color:#FAFAD2; border-radius:100%">
-    </div>
-    <div class="col-sm-4"> 
-      <h3><b>Mesh Filter</b></h3>
-      <ul style="font-size: 15px">    
-          <li><b>Material:</b>  SS/Aluminium/G.I</li>
-          <li><b>Hole Shape:</b> Square</li>
-          <li><b>Layers:</b> 1 to 5 layers</li>
-          <li><b>Size:</b>Standard/Customized </li>
-          <li><b>Type:</b>Woven</li>
-      </ul>
-    </div>
-  </div>
-
-  <br>
-  <h3 style="color: darkblue"><b>Microvee Filter</b></h3>
-    
-  <div class="row"  style="border:1px solid lightgrey;width:1000;height: 1000;padding: 20px;border-spacing: 20px"> <!-- second row-->
-    <div class="col-sm-4">
-      <img src= "microveefilter.jpeg" alt="Mesh Filter"  style="width:90%;height:70%;border:1px solid grey;width:700;height:700; padding: 25px;background-color:#FAFAD2; border-radius:100%">
-    </div>
-    <div class="col-sm-4"> 
-      <h3><b>Microvee Filter</b></h3>
-      <ul style="font-size: 15px">    
-          <li><b>Type:</b>  Box/Falnge</li>
-          <li><b>Microvee Filter:</b>  5/3 micron</li>
-          <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
-          <li><b>Sizes:</b> 610mmx610mmx305mm/ Customized</li>
-          <li><b>Shape:</b> Square</li>
-      </ul>
-    </div>
-  </div>
-   
-</div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>-
+  </a>
 </div>
 
-<div id="Profile" class="tabcontent">
-  <h3 style="text-align: center;font-size:24px">Profile</h3>
+    <div id="profile" >
+  <h2 style="text-align: center;font-size:24px"><strong>PROFILE</strong></h2>
   <p style="font-size: 18px">Established in the year 2007, we, <b>“K.G.N Filter Products",</b>
-  are manufacturing, supplying, repairing & installing all types of Air-Handling-Units Filters and ductable filters.Our products are well known among clients owing to their tough construction, best quality and timely supply. We supply our products in various areas such as Hospital, Mall,Hotels & in differents industrial areas.</p>
+  are manufacturing, supplying, repairing & installing all types of Air-Handling-Units Filters,HVAC Filters and ductable filters.Our products are well known among clients owing to their tough construction, best quality and timely supply. We supply our products in various areas such as Hospital, Mall,Hotels & in differents industrial areas.</p>
 </div>
 
-<div id="Contacts" class="tabcontent">
+    <div id="products">
+      <h2 style="text-align: center;font-size:24px"><strong>PRODUCTS</strong></h2>
 
   <div class="container"> <!--In html container is a area it is  enclosed by begining and closing tag for exampole html tag enclsed entired htmk documents and some other tags enclosed single word and paragraph  -->
-      <div class="row">
-        <div class="col-sm-4">  <!-- First column in row-->
-          <h3 style="color: darkblue"><b>Reach US</b></h3>   
-          <p style="font-size: 17px">Ashok Nagar Group No-1 Near Ruby Hospital,<br> Sona Intp Colony Tagore Nagar Vikhroli East,<br>Mumbai-400078, Maharastra, India<br >Mohammad Zamiruddin<br>Call<b> 09833192321</b></p>
-        </div>
 
-        <div class="col-sm-2">
-          <h3>Requirements details</h3> 
-          <form action="#">
-            <label for="Requirement Details">
-              <textarea class="form-control" placeholder="To Get Best Quotes Describe Your Requirements:-
--What Are You Looking For 
--Features/Specifications
--Order Quantity" style="width: 600px;height: 120px;background-color: #FAFAD2"></textarea>
-            </label>
-
-            <div >
-            <br>  <!-- for adding one line space-->
-            <input type="number" placeholder="+91 Enter Number" class="form-control" style="width: 600px;background-color: #FAFAD2" />
-            </div>
-
-            <div>
-            <br>  <!-- for adding one line space-->
-            <input type="message" placeholder="Enter your name" class="form-control" style="width: 600px;
-            background-color:#FAFAD2" />
-            </div>
-
-            <div>
-            <br>
-            <input type="submit" value="Submit" class="form-control" id="submitbutton" style="width: 100px; background-color:#FAFAD2;position: absolute; left:  250px;"/>  <!-- id for performing operation in javaScript-->
-            </div>
-            <br>
-
-          </form>
-        </div>
+    <div class="row" style="border:2px solid lightgrey">  <!-- First Row In container-->  
+      <div class="col-sm-4" style="padding: 30px">  <!-- First column in first row-->
+        <img src="D:\Html\MYwebsite\Filter Images\Kgn filter images\Filter.jpeg" class="img-thumbnail" alt="Pre Filter" style="width:90%;height:70%"> <!-- Fine Filter-->
       </div>
-
-      <div class="row">
-        <div class="col-sm-4">
-          <br><p style="font-size: 18px;color: grey"><b>Get direction</b></p>
-          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8127291074093!2d72.92963631421334!3d19.11586975568713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c73547f849e1%3A0x68e180db27bfe76!2sKgn%20Filter%20Products!5e0!3m2!1sen!2sin!4v1591766981820!5m2!1s en!2sin" width="620" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>  <!--Here we  added google map -->
-        </div>
+    
+      <br><br><br>    <!--Break tag is used for description -->
+        <div class="col-sm-5" id="text1">  <!--second column in firstrow -->
+          <h3 style="color: #FFA62F"><b>Air Filter/Pre Filter</b></h3> <!--Fine Filter Description -->
+          <ul style="font-size: 15px">    <!-- This tag is used for unorder list with bullets ,small black or circles-->
+            <li><b>Type:</b>  Box/Flange Type</li>
+            <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
+            <li><b>Media:</b>HDPE/Non Woven Media</li>
+            <li><b>Efficiency:</b>90% down to 10 micron</li>
+            <li><b>Size:</b> 610mmx610mmx50mm/ Customized</li>
+            <li><b>Shape:</b> Square</li>
+          </ul>
+          <br>
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" style="color: black">...more</button>
+          <div id="demo" class="collapse">
         
+          </div>
+
+        </div>
+    </div>
+
+    <br> <!-- blank space between rows-->
+    <div class="row" style="border:2px solid lightgrey">  
+      <div class="col-sm-4" style="padding:30px">  <!-- First column in second row-->
+        <img src="D:\Html\MYwebsite\Filter Images\Kgn filter images\Combination micrv Filter.jpeg" class="img-thumbnail" alt="Pre Filter" style="width:90%;height:70%"> <!-- Fine Filter-->
+      </div>
+    
+      <br><br><br>    <!--Break tag is used for description -->
+        <div class="col-sm-5" id="text1">  <!--Second column in second row -->
+          <h3 style="color: #FFA62F"><b>Combination Microvee Filter</b></h3> <!--Microvee Filter -->
+          <ul style="font-size: 15px">    <!-- This tag is used for unorder list with bullets ,small black and circles-->
+            <li><b>Type:</b>Flange Type</li>
+            <li><b>Frame:</b> Galvanized/Aluminium</li>
+            <li><b>Shape:</b>HDPE/Non Woven Media</li>
+            <li><b>Efficiency:</b>90% down to 5 micron</li>
+            <li><b>Size:</b> 610mmx610mmx50mm/ Customized</li>
+            <li><b>Shape:</b> Square</li>
+          </ul> 
+
+          <br>
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" style="color: black">...more</button>
+          <div id="demo" class="collapse">
+        
+          </div>
+
+        </div>
+    </div>
+
+    <br> <!-- blank space between rows-->
+    <div class="row" style="border:2px solid lightgrey">  
+      <div class="col-sm-4" style="padding:30px">  <!-- First column in third row-->
+        <img src="D:\Html\MYwebsite\Filter Images\Kgn filter images\microveefilter.jpeg" class="img-thumbnail" alt="Microvee Filter" style="width:90%;height:70%"> <!-- Fine Filter-->
+      </div>
+    
+      <br><br><br>    <!--Break tag is used for description -->
+        <div class="col-sm-5" id="text1">  <!--Second column in third row -->
+          <h3 style="color: #FFA62F"><b>Microvee Filter</b></h3> <!--Microvee Filter -->
+          <ul style="font-size: 15px">    <!-- This tag is used for unorder list with bullets ,small black and circles-->
+            <li><b>Type:</b> Flange Type</li>
+            <li><b>Frame:</b> Galvanized/Aluminium</li>
+            <li><b>Size:</b> 610mmx610mmx50mm/ Customized</li>
+            <li><b>Shape:</b>HDPE/Non Woven Media</li>
+            <li><b>Efficiency:</b>90% down to 5 micron</li>
+            <li><b>Shape:</b> Square</li>
+            
+          </ul> 
+
+          <br>
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" style="color: black">...more</button>
+          <div id="demo" class="collapse">
+        
+          </div>
+
+        </div>
+    </div>
+
+
+    <br> <!-- blank space between rows-->
+    <div class="row" style="border:2px  solid lightgrey">  
+      <div class="col-sm-4" style="padding:30px">  <!-- First column in fourth row-->
+        <img src="D:\Html\MYwebsite\Filter Images\Wiremesh_Filter1.jpeg" class="img-thumbnail" alt="Pre Filter" style="width:90%;height:70%"> <!-- Fine Filter-->
+      </div>
+    
+      <br><br><br>    <!--Break tag is used for description -->
+        <div class="col-sm-5" id="text1">  <!--Second column in fourth row -->
+          <h3 style="color: #FFA62F"><b>Wiremesh Filter</b></h3> <!--Fine Filter -->
+          <ul style="font-size: 15px">    <!-- This tag is used for unorder list with bullets ,small black and circles-->
+            <li><b>Type:</b>  Box/Flange Type</li>
+            <li><b>Frame:</b> Galvanized/Aluminium/S.S</li>
+            <li><b>Filter Media:</b> Aluminium mesh</li>
+            <li><b>Efficiency:</b> 80-85% down to 20 micron</li>
+            <li><b>Sizes:</b> 610mmx610mmx50mm/ Customized</li>
+            <li><b>Shape:</b> Square</li>
+          </ul>
+
+          <br>
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" style="color: black">...more</button>
+          <div id="demo" class="collapse">
+        
+          </div>
+ 
+        </div>
+    </div>
+
+    <br> <!-- blank space between rows-->
+    <div class="row" style="border:2px solid lightgrey">  
+      <div class="col-sm-4" style="padding:20px">  <!-- First column in fifth  row-->
+        <img src="D:\Html\MYwebsite\kgnfilterproducts\kitchenhood_Filter.jpeg"  class="img-thumbnail" alt="Microvee Filter" style="width:90%;height:70%"> <!-- Fine Filter-->
+      </div>
+    
+      <br><br><br>    <!--Break tag is used for description -->
+        <div class="col-sm-5" id="text1" style="padding: 5px">  <!--Second column in fifth row -->
+          <h3 style="color: #FFA62F"><b>Kitchen Hood Filter</b></h3> <!--Fine Filter -->
+          <ul style="font-size: 15px">    <!-- This tag is used for unorder list with bullets ,small black and circles-->
+            <li><b>Type:</b>  Box Type</li>
+            <li><b>Frame:</b> Galvanized/S.S</li>
+            <li><b>Sizes:</b> 610mmx610mmx50mm/ Customized</li>
+            <li><b>Shape:</b> Square</li>
+          </ul> 
+
+          <br>
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" style="color: black">...more</button>
+          <div id="demo" class="collapse">
+        
+          </div>
+
+        </div>
+    </div>
+
+  </div>
+</div>
+<br><br>
+<a href="#top"><b style="padding-left: 40px;font-size: 20px">Back to top of page</b></a><!--For go to top of the page -->
+
+<div id="contacts"></div>
+<h2 style="text-align: center;font-size:24px"><strong>CONTACT</strong></h2>
+<div style="background-color: #2B3856"> 
+  <div class="container"><!--In Html container is an Area which is enclosed by begining and starting tag it defines the are on web page -->
+    <div class="row" style="color: white">  <!-- First Row-->
+      <div class="col-sm-4"><!-- First Column in row -->
+        <h3>Reach Us</h3>
+        <p>Ashok Nagar Group No-1 Near Ruby Hospital<br>
+        Sona Intp Colony Tagore Nagar Vikhroli (East),<br>Mumbai-400078, Maharastra, India<br>
+        Mohammad Zamiruddin<br></p>
+        <h3>Contact Us</h3>
+        <p>Email kgnfilterproducts@gmail.com</p>
+        <p>Call at +919833192321</p>
+        <p>WhatsApp at +918779772110</p>
+      </div>  
+    </div>
+    <div class="row"><!-- Second Row -->
+      <div class="col-sm-4">  <!--First Column in second row -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8127291074093!2d72.92963631421334!3d19.11586975568713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c73547f849e1%3A0x68e180db27bfe76!2sKgn%20Filter%20Products!5e0!3m2!1sen!2sin!4v1594295899524!5m2!1sen!2sin" width="500" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="col-sm-4">
+
       </div>
     </div>
-    
-  
+  </div>
 </div>
-    
+</div>
+
+
+
 </body>
-<script src="website.js"></script>    <!--We link the javascript file here-->
-</html>
 </html>
